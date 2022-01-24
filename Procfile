@@ -1,1 +1,1 @@
-web: java -jar target/BlogAPI-1.0.jar
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.blog.App
