@@ -47,12 +47,12 @@ public class SpringFoxConfig implements WebMvcConfigurer {
     @Bean
     public BasicDataSource dataSource() {
         BasicDataSource ds = new BasicDataSource();
-        System.out.println("User " + env.getProperty("spring.datasource.username"));
+
         ds.setDriverClassName(env.getProperty("spring.datasource.driverClassName"));
         ds.setUrl(env.getProperty("spring.datasource.url"));
         ds.setUsername(env.getProperty("spring.datasource.username"));
         ds.setPassword(env.getProperty("spring.datasource.password"));
-        //ds.setInitialSize(Integer.parseInt(env.getProperty("spring.r2dbc.pool.initial-size")));
+
         return ds;
     }
 
