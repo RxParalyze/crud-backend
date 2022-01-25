@@ -73,6 +73,11 @@
             <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>5.3.9</version>
@@ -273,6 +278,9 @@
             <version>3.0.3</version>
             <configuration>
               <appName>rxparalyze-crud-backend-app</appName>
+              <processTypes>
+                <web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.blog.App -Dserver.port=$PORT</web>
+              </processTypes>
             </configuration>
           </plugin>
           <plugin>
