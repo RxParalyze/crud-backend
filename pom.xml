@@ -272,7 +272,7 @@
             <artifactId>heroku-maven-plugin</artifactId>
             <version>3.0.3</version>
             <configuration>
-              <appName>stark-tundra-98898</appName>
+              <appName>rxparalyze-crud-backend-app</appName>
             </configuration>
           </plugin>
           <plugin>
