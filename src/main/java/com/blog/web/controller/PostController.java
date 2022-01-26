@@ -27,7 +27,7 @@ import com.google.common.base.Preconditions;
 @Slf4j
 @RestController
 @RequestMapping("/posts")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://rxparalyze-crud-frontend-app.herokuapp.com")
 public class PostController {
 
     @Autowired
